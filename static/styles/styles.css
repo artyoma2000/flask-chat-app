@@ -1,0 +1,158 @@
+/* Общие стили */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#room-container, #home-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#home-header, h2 {
+  font-size: 2rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#room-subsection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#room-code-display span {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#msgs-container {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.message-item {
+  list-style: none;
+  padding: 10px;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.self-message-item {
+  background-color: #d1e7dd;
+  text-align: right;
+}
+
+.peer-message-item {
+  background-color: #e9ecef;
+}
+
+.member-activity {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  color: #6c757d;
+}
+
+.muted-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.muted-text-white {
+  font-size: 0.8rem;
+  color: #343a40;
+}
+
+#message-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-right: 10px;
+}
+
+button, #send-btn, #leave-chat-btn, #join, #create {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, #send-btn:hover, #leave-chat-btn:hover, #join:hover, #create:hover {
+  background-color: #0056b3;
+}
+
+#leave-chat-btn {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 1rem;
+  color: #495057;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin: 20px 0;
+}
+
+#error {
+  color: #dc3545;
+  text-align: center;
+}
+
+button#join, button#create {
+  width: 100%;
+  padding: 10px;
+}
